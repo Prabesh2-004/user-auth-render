@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 import Profile from "./pages/Profile.jsx";
 
 // ADD THIS LINE - Replace with your actual backend port
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://user-auth-render-backend.onrender.com';
 axios.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) {
